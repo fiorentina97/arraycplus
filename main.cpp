@@ -143,20 +143,8 @@ int main()
     cout<<"¬ведите им€ выходного файла:\n";
     cin>>str;
   
-  //result
    int k=0;
         int *d = new int[n+m];
-       /* for (int i=0; i<n; i++)
-        {
-            for (int j=0; j<m; j++)
-            {
-                if (a[i]==b[j])
-                {
-                d[k]=a[i];
-                k++;
-                }
-            }
-        } */
         d = intersection(a,b,n,m,k);
         outputvf(fout,d,k,str);
     	cout << "Success!";
